@@ -1,0 +1,7 @@
+syntax = "proto3";
+package himitsu.himitsu;
+
+option go_package = "himitsu/x/himitsu/types";
+
+// Msg defines the Msg service.
+service Msg {}
