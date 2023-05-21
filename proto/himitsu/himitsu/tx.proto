@@ -1,7 +1,20 @@
 syntax = "proto3";
+
 package himitsu.himitsu;
 
 option go_package = "himitsu/x/himitsu/types";
 
 // Msg defines the Msg service.
-service Msg {}
+service Msg {
+  rpc SendCidHash (MsgSendCidHash) returns (MsgSendCidHashResponse);
+}
+message MsgSendCidHash {
+  string creator   = 1;
+  string tomodachi = 2;
+  string cidHash   = 3;
+}
+
+message MsgSendCidHashResponse {
+  uint64 id = 1;
+}
+
