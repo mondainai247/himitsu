@@ -17,7 +17,26 @@ Install using the Makefile
 ```
 make install 
 ```
+See the available commands with the --help flag
+```
+himitsud --help
+```
+Connect the application to the testnet
+```
+himitsud config node http://172.104.89.139:26657
+```
+Create an account/wallets(keys) -- keep the mnemonic is safe place(though this is only testnet!) 
+```
+himitsud keys add account1
+```
+Confirm your account was created
+```
+himitsud keys list 
 
+or 
+
+himitsud keys show account1
+```
 
 Himitsu Network: A Scalable, Privacy-Preserving, and Secure Blockchain 
 Network
