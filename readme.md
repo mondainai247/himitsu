@@ -7,8 +7,17 @@ created with [Ignite CLI](https://ignite.com/cli)
 To install the latest version
 
 ```
-curl https://get.ignite.com/mondainai247/himitsu | sudo bash
+git clone https://github.com/mondainai247/himitsu 
 ```
+Move into the himitsu directory
+```
+cd himitsu 
+```
+Install using the Makefile
+```
+make install 
+```
+
 
 Himitsu Network: A Scalable, Privacy-Preserving, and Secure Blockchain 
 Network
