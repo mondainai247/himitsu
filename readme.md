@@ -23,7 +23,7 @@ himitsud --help
 ```
 Connect the application to the testnet
 ```
-himitsud config node http://172.104.89.139:26657
+himitsud config node http://172.104.165.223:26657
 ```
 Create an account/wallets(keys) -- keep the mnemonic is safe place(though this is only testnet!) 
 ```
