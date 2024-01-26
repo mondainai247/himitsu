@@ -1,8 +1,9 @@
 # Himitsu Testnet is Live
 **himitsu** is a blockchain built using Cosmos SDK and Tendermint and 
-created with [Ignite CLI](https://ignite.com/cli)
-
-
+created with [Ignite CLI](https://ignite.com/cli) Version v0.26.1
+```
+curl https://get.ignite.com/cli@v0.26.1 | bash
+```
 ### Install
 To install the latest version
 
