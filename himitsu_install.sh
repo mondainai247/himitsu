@@ -22,11 +22,9 @@ go env
 
 curl https://get.ignite.com/cli@v0.26.1 | bash
 
-curl https://get.ignite.com/cli | bash
-
 sudo mv ignite /usr/local/bin
 ignite version
-echo “Welome to Himitsu” 
+
 
 
 
@@ -36,3 +34,4 @@ cd himitsu
 make install 
 
 himitsud --vesion
+echo “Welome to Himitsu” 
