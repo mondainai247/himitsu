@@ -1,21 +1,24 @@
 version: 1
 accounts:
+  - name: frank
+    coins:
+      - 9000000000000himitsu
   - name: alice
     coins:
-      - 200000000himitsu
-  - name: bob
-    coins:
-      - 100000000himitsu
+      - 1000000000000himitsu
 client:
   openapi:
     path: docs/static/openapi.yml
 faucet:
-  name: bob
+  name: frank
   coins:
-    - 1000000000himitsu
+    - 1000000000000himitsu
 validators:
-  - name: alice
-    bonded: 100000000himitsu
+  - name: frank
+    bonded: 1000000000000himitsu
+    config:
+      consensus:
+        timeout_commit: '20s'
 
 genesis:
   app_state:
@@ -31,5 +34,10 @@ genesis:
       constant_fee:
         denom: "himitsu"
     mint:
+      minter:
+        inflation: "0.000000000000000"
       params:
+        inflation_max: "0.000000000000000"
+        inflation_min: "0.000000000000000"
+        inflation_rate_change: "0.000000000000000"
         mint_denom: "himitsu"
